@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milk Way</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/selects.js" defer></script>
+    <script src="js/total.js" defer></script>
+    <script src="https://kit.fontawesome.com/cdb9acd36b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="content">
+
+        <section id="steps-container">
+            <div id="step-1" class="step selected">
+                <span class="step-num">1</span>
+                <div class="step-info">
+                    <span class="step-name">STEP 1</span>
+                    <span class="step-detail">YOUR INFO</span>
+                </div>
+            </div>
+            <div id="step-2" class="step">
+                <span class="step-num">2</span>
+                <div class="step-info">
+                    <span class="step-name">STEP 2</span>
+                    <span class="step-detail">SELECT PLAN</span>
+                </div>
+            </div>
+            <div id="step-3" class="step">
+                <span class="step-num">3</span>
+                <div class="step-info">
+                    <span class="step-name">STEP 3</span>
+                    <span class="step-detail">ADD-ONS</span>
+                </div>
+            </div>
+            <div id="step-4" class="step">
+                <span class="step-num">4</span>
+                <div class="step-info">
+                    <span class="step-name">STEP 4</span>
+                    <span class="step-detail">SUMMARY</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="forms-container">
+
+            <form id="personal-info-form" class="form selected">
+                <h2 class="form-tittle">Personal info</h2>
+                <p>Please enter your name, e-mail and phone number</p>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Name">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="E-mail" >
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" 
+                pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" placeholder="(99) 99999-9999">
+            </form>
+
+            <form id="plans-form" class="form">
+                <h2 class="form-tittle">Select your plan</h2>
+                <p>Select the plan that best suits you</p>
+                <div class="plan selected">
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <div class="plan-info">
+                        <span class="plan-name">Earth <span class="detail">(Basic)</span></span>
+                        <span class="plan-price">$10/mo</span>
+                    </div>
+                </div>
+                <div class="plan">
+                    <i class="fa-solid fa-shuttle-space"></i>
+                    <div class="plan-info">
+                        <span class="plan-name">Rocket <span class="detail">(Advanced)</span></span>
+                        <span class="plan-price">$13/mo</span>
+                    </div>
+                </div>
+                <div class="plan">
+                    <i class="fa-solid fa-user-astronaut"></i>
+                    <div class="plan-info">
+                        <span class="plan-name">Astronaut <span class="detail">(Pro)</span></span>
+                        <span class="plan-price">$16/mo</span>
+                    </div>
+                </div>
+            </form>
+
+            <form id="add-ons-form" class="form">
+                <h2>Pick add-ons</h2>
+                <p>Add-ons help enhance your experience</p>
+                <div class="addon">
+                    <input type="checkbox">
+                    <div class="addon-info">
+                        <span class="addon-name">Astronomy ebooks</span>
+                        <span class="addon-detail">Access to our online library</span>
+                    </div>
+                    <span class="addon-price">+$1/mo</span>
+                </div>
+                <div class="addon">
+                    <input type="checkbox">
+                    <div class="addon-info">
+                        <span class="addon-name">Larger storage</span>
+                        <span class="addon-detail">Extra 1 TB of cloud save</span>
+                    </div>
+                    <span class="addon-price">+$1/mo</span>
+                </div>
+                <div class="addon">
+                    <input type="checkbox">
+                    <div class="addon-info">
+                        <span class="addon-name">Customizable profile</span>
+                        <span class="addon-detail">Custom your theme profile</span>
+                    </div>
+                    <span class="addon-price">+$1/mo</span>
+                </div>
+            </form>
+            <form id="confirm-form" class="form">
+                <h2>Finishing up</h2>
+                <p>Double-check everything looks OK before confirming</p>
+                <div class="confirm">
+                    <div id="plan-confirm">
+
+                    </div>
+                    <div id="addons-confirm">
+                        
+                    </div>
+                </div>
+                <div class="total">
+                    <span>Total (per month)</span>
+                    <span id="total-price">+12$/mo</span>
+                </div>
+            </form>
+            <form id="thanks" class="form">
+                <i class="fa-solid fa-circle-check"></i>
+                <h2>Thank You!</h2>
+                <p>Thanks for confirming your subscription!
+                    We hope you have fun using our 
+                    platform. If you ever need support, 
+                    please feel free to email us at 
+                    <span>support@milkway.com</span>
+                </p>
+            </form>
+        <div id="back-next">
+            <button id="back">Go Back</button>
+            <button id="next">Next Step</button>
+        </div>
+        </section>
+        
+    </div>
+</body>
+</html>

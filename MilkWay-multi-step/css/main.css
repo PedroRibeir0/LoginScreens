@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+#forms-container {
+  width: 85%;
+  margin: 0 auto;
+  background-color: white;
+  color: rgb(90, 45, 163);
+  border-radius: 15px;
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.125);
+  margin-top: -50px;
+  padding: 15px;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  #forms-container {
+    width: 50%;
+    height: 60%;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+#forms-container .form {
+  display: none;
+  flex-direction: column;
+}
+#forms-container .form h2 {
+  letter-spacing: 1px;
+  margin: 15px 0;
+}
+#forms-container .form p {
+  color: rgb(126, 126, 126);
+  margin-bottom: 15px;
+}
+#forms-container .form label {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+#forms-container .form input {
+  height: 35px;
+  margin-bottom: 15px;
+  margin-top: 2px;
+  border-radius: 8px;
+  border: 1px solid rgb(126, 126, 126);
+}
+#forms-container .form input::-moz-placeholder {
+  padding-left: 5px;
+  color: rgb(126, 126, 126);
+}
+#forms-container .form input:-ms-input-placeholder {
+  padding-left: 5px;
+  color: rgb(126, 126, 126);
+}
+#forms-container .form input::placeholder {
+  padding-left: 5px;
+  color: rgb(126, 126, 126);
+}
+#forms-container .form .plan, #forms-container .form .addon {
+  display: flex;
+  border: 1px solid rgb(126, 126, 126);
+  border-radius: 10px;
+  padding: 25px 15px;
+  margin-bottom: 15px;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+#forms-container .form .plan i, #forms-container .form .addon i {
+  font-size: 1.5rem;
+}
+#forms-container .form .plan .plan-info, #forms-container .form .addon .plan-info {
+  display: flex;
+  flex-direction: column;
+}
+#forms-container .form .plan .plan-info .plan-name, #forms-container .form .addon .plan-info .plan-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+#forms-container .form .plan .plan-info .plan-name .detail, #forms-container .form .addon .plan-info .plan-name .detail {
+  color: rgb(126, 126, 126);
+  font-weight: 400;
+}
+#forms-container .form .plan .plan-info .plan-price, #forms-container .form .addon .plan-info .plan-price {
+  color: rgb(126, 126, 126);
+}
+#forms-container .form .selected {
+  border: 3px solid rgb(90, 45, 163);
+  background-color: rgba(128, 0, 128, 0.05);
+}
+#forms-container .form .addon {
+  justify-content: space-around;
+  padding: 5px 10px;
+}
+#forms-container .form .addon input {
+  width: 20px;
+  margin-top: 12px;
+}
+#forms-container .form .addon .addon-info {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+#forms-container .form .addon .addon-info .addon-name {
+  font-weight: 600;
+}
+#forms-container .form .addon .addon-info .addon-detail {
+  color: rgb(126, 126, 126);
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+#forms-container .form .addon .addon-price {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgb(0, 92, 200);
+}
+#forms-container .form .confirm {
+  background-color: rgb(242, 246, 248);
+  padding: 15px 13px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#forms-container .form .confirm #plan-confirm {
+  padding-bottom: 10px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(169, 193, 201);
+}
+#forms-container .form .confirm #addons-confirm {
+  color: rgb(126, 126, 126);
+  font-weight: 300;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+#forms-container .form .confirm #addons-confirm .ad {
+  display: flex;
+  justify-content: space-between;
+}
+#forms-container .form .total {
+  margin: 25px 15px;
+  margin-bottom: 10px;
+  color: rgb(126, 126, 126);
+  display: flex;
+  justify-content: space-between;
+}
+#forms-container .form .total #total-price {
+  color: rgb(0, 92, 200);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+#forms-container #thanks {
+  text-align: center;
+}
+#forms-container #thanks h2 {
+  font-size: 1.9rem;
+}
+#forms-container #thanks i {
+  overflow: hidden;
+  font-size: 2.5rem;
+  background-color: rgb(90, 45, 163);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: white;
+  margin: 15px auto;
+  padding: 15px;
+  border-radius: 50%;
+  text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.466);
+}
+#forms-container #thanks p {
+  font-size: 1.1rem;
+  width: 75%;
+  margin: 10px auto;
+}
+#forms-container #thanks p span {
+  color: rgb(105, 105, 105);
+  font-weight: bold;
+  cursor: pointer;
+}
+#forms-container .selected {
+  display: flex;
+}
+#forms-container #back-next {
+  display: flex;
+  padding: 20px 0;
+  justify-content: center;
+  gap: 90px;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  left: 0px;
+  bottom: 0px;
+}
+@media screen and (min-width: 768px) {
+  #forms-container #back-next {
+    position: static;
+    background-color: transparent;
+    position: absolute;
+    bottom: 10px;
+    left: 13%;
+  }
+}
+#forms-container #back-next button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border: none;
+  width: 110px;
+  padding: 13px 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+#forms-container #back-next button:active {
+  transform: scale(0.98);
+}
+#forms-container #back-next #back {
+  display: none;
+  background-color: transparent;
+  color: rgb(126, 126, 126);
+}
+#forms-container #back-next #next {
+  background-color: rgb(90, 45, 163);
+  color: white;
+  border-radius: 7px;
+}
+
+body {
+  background-color: rgb(25, 20, 29);
+}
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(61, 67, 73);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  background: url("../images/space-mobile.jpg");
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+  color: whitesmoke;
+  width: 100%;
+  height: 100vh;
+}
+@media screen and (min-width: 768px) {
+  #content {
+    position: relative;
+    padding: 0 20px;
+    background: white;
+    margin: 0;
+    max-width: 900px;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.125);
+  }
+}
+#content #steps-container {
+  font-weight: 400;
+  height: 172px;
+  display: flex;
+  justify-content: center;
+  gap: 7%;
+  line-height: 100px;
+}
+@media screen and (min-width: 768px) {
+  #content #steps-container {
+    width: 25%;
+    background: url("../images/space.jpg");
+    background-size: cover;
+    height: 95%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    border-radius: 10px;
+  }
+}
+#content #steps-container .step {
+  display: flex;
+  margin-top: 15px;
+}
+#content #steps-container .step .step-num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: all 0.1s;
+}
+#content #steps-container .step .step-info {
+  display: none;
+  margin-left: 10px;
+}
+#content #steps-container .step .step-info .step-name {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+#content #steps-container .step .step-info .step-detail {
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  #content #steps-container .step .step-info {
+    display: flex;
+    flex-direction: column;
+    line-height: initial;
+  }
+}
+#content #steps-container .selected .step-num {
+  background-color: white;
+  color: purple;
+}/*# sourceMappingURL=main.css.map */
